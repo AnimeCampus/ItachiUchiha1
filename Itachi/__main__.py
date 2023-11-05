@@ -285,6 +285,6 @@ async def donate(_, message):
             except Unauthorized:                
                 await message.reply_text("**Contact Me In PM To Get Donation Information First!**")                                                                                               
 
-if __name__ == "__main__" :
+
     loop.run_until_complete(main())
     LOG.print("Stopped Client.") 
