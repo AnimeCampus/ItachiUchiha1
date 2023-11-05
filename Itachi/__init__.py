@@ -114,5 +114,5 @@ async def init():
     
     LOG.print("Successfully Executed Everything.")
     
-
+app.run()
 loop.run_until_complete(init()) 
