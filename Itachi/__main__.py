@@ -283,8 +283,8 @@ async def donate(_, message):
             try:
                 await app.send_message(message.from_user.id,text=f"[Here Is The Donation Link]({config.DONATION_LINK})")
             except Unauthorized:                
-                await message.reply_text("**Contact Me In PM To Get Donation Information First!**")                                                                                               
-
-
+                await message.reply_text("**Contact Me In PM To Get Donation Information First!**")
+                
+if __name__ == "__main__" :
     loop.run_until_complete(main())
     LOG.print("Stopped Client.") 
